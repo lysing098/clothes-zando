@@ -13,7 +13,7 @@ import Product from "./page/Product.jsx";
 import { Toaster } from "react-hot-toast";
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename="/zando-static">
       <Routes>
         <Route element={<RootLayout />}>
           <Route path="/" element={<App />} />
